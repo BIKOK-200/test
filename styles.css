@@ -1,0 +1,45 @@
+body{
+    background-color: gainsboro;
+}
+form{
+    border: 4px solid white;
+    box-shadow: 1rem 2rem 3rem black;
+    width: 40rem;
+    height: 67rem;
+    background-color: white;
+    margin-left: 30%;
+    margin-top: 5rem;
+    border-radius: 1rem;
+    padding-top: 2rem;
+}
+h3{
+    text-align: center;
+    color: orange;
+    font-size: 1.2rem;
+}
+label{
+    margin-left: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+button{
+    background-color: green;
+    margin-left: 2rem;
+    border: none;
+    width: 8rem;
+    height: 5rem;
+    border-radius: 4rem;
+    margin-top: 2rem;
+}
+input[type="reset"]{
+    background-color: red;
+    margin-left: 9.8rem;
+    border: none;
+    width: 8rem;
+    height: 5rem;
+    border-radius: 4rem;
+    color: blue;
+}
+a{
+    text-decoration: none;
+}

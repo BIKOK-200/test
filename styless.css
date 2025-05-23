@@ -1,0 +1,11 @@
+body{
+    background-image: url(./images/caption.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.text{
+    color: white;
+    font-size: 8rem;
+    text-align: center;
+    margin-top: 10rem;
+}

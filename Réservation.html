@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        <hr>
+        <h3>Informations Personnelles</h3>
+        <hr>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" placeholder=".......thomas......."><br>
+        <br>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" placeholder="......samuel......."><br>
+        <br>
+        <label for="mail">E-mail :</label>
+        <input type="email" id="mail" placeholder="mercisamuel@gmail.com"><br>
+        <br>
+        <label for="contat">Téléphone :</label>
+        <input type="text" id="contat" placeholder="656-59-11-73"><br>
+        <br>
+        <label for="mot de passe">Mot de passe :</label>
+        <input type="password" id="mot de passe" placeholder="bazerty2007">
+        <br><br>
+        <label for="confirmation">Confirmer mot de passe :</label>
+        <input type="password" id="confirmation" placeholder="bazerty2007">
+        <hr>
+        <h3>Informations de Réservation</h3>
+        <hr>
+        <label for="date">Date de réservation :</label>
+        <input type="text" id="date" placeholder="02/05/2016"><br>
+        <br>
+        <label for="heure">Heure de Réservation :</label>
+        <input type="text" id="heure" placeholder=".....12h00....."><br>
+        <br>
+        <label for="nombre">Nombre de Personne :</label>
+        <input type="text" id="nombre" placeholder="......06......."><br>
+        <br>
+        <label for="table">Table Préférée :</label>
+        <label for="terrasse">Terrasse</label>
+        <input type="radio" id="terrasse" name="emplacement">
+        <label for="interieure">Intérieure</label>
+        <input type="radio" id="Intérieure" name="emplacement">
+        <label for="extérieure">Extérieure</label>
+        <input type="radio" id="extérieure" name="emplacement"><br>
+        <br>
+        <hr>
+        <h3>Préférences Alimentaires</h3>
+        <hr>
+        <label for="régime">Régime alimentaire :</label>
+        <ul>
+            <li>
+                <label for="aliments">Végétarien</label>
+                <input type="radio" id="aliments" name="alimentaire">
+            </li>
+            <li>
+                <label for="aliments">Sans gluten</label>
+                <input type="radio" id="aliments" name="alimentaire">
+            </li>
+        </ul>
+        <label for="question">Est-ce que vous etes Allergies ou une intolérances alimentaires ?</label>
+        <span>OUI</span>
+        <input type="radio" id="oui" name="reponse">
+        <span>NON</span>
+        <input type="radio" id="non" name="reponse"><br>
+        <br>
+        <hr>
+        <h3>Informations Supplémentaires</h3>
+        <hr>
+        <label for="spécial">Occasion spéciale : </label>
+        <ul>
+            <li>
+                <label for="mariage">Mariage</label>
+                <input type="radio" id="mariage" name="Supplémentaire">
+            </li>
+            <li>
+                <label for="anniversaire">Anniversaire</label>
+                <input type="radio" id="anniversaire" name="Supplémentaire">
+            </li>
+        </ul>
+        <input type="reset" value="Réinitialiser">
+        <button><a href="page.html">Reserver</a></button>
+    </form>    
+</body>
+</html>

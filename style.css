@@ -1,0 +1,718 @@
+.Menu div{
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.Menu div:hover{
+    background-color: rgb(255,0,0);
+}
+
+nav{
+    width: 78rem;
+    position: fixed;
+    height: 4rem;
+    background-color: rgb(0, 0 , 0);
+    display: flex;
+    border-radius: 2rem;
+}
+nav div a{
+    text-decoration: none;
+    flex-direction: row;
+    color: white;
+}
+.d1{
+    margin-left: 7rem;
+}
+.d2{
+    margin-left: 7rem;
+}
+.d3{
+    margin-left: 7rem;
+}
+.d4{
+    margin-left: 7rem;
+}
+.d5{
+    margin-left: 7rem;
+}
+.d6{
+    margin-left: 7rem;
+}
+h1{
+    color: rgb(225, 200, 8);
+    font-size: 4rem;
+    padding-left: 28%;
+}
+.corps{
+    border: 1px ridge wheat;
+    background-color: wheat;
+    margin-top: 4rem;
+    border-radius: 2rem;
+    margin-left: 10rem;
+    width: 60rem;
+    height: 40rem;
+    border-top:2rem
+}
+img{
+    width: 11rem;
+    height: 11rem;
+    padding-left: 2rem;
+    border-radius: 100%;
+}
+
+
+.image{
+    margin-left: 17rem;
+    margin-top: 2rem;
+    padding: 2rem 2rem;
+    border-radius: 5rem;
+}
+.propos{
+    text-align: center;
+}
+.personnalite{
+    margin:0;
+    font-size: 3rem;
+    color: yellowgreen;
+}
+h3{
+    font-size: 2rem;
+}
+table{
+    font-size: 2rem;
+
+}
+h2{
+    color: rgb(225, 200, 8);
+    text-align: center;
+    font-size: 4rem;
+}
+.conteneur{
+    width: 78.4rem;
+    height: 34rem;
+    background-color: yellow;
+    border: 1px solid none;
+    display: grid;
+    grid-template-rows: repeat(1,0fr);
+    grid-template-columns: repeat(3, 400px);
+    text-align: center;
+    margin-top: 2rem;
+}
+.grid1{
+    background-color: white;
+    width: 30rem;
+}
+.grid1 h2{
+    font-size: 2rem;
+    color: maroon;
+}
+.grid1 img{
+    width:20rem;
+    height: 19rem;
+    border-radius: 100%;
+}
+.grid1 p{
+    color: rebeccapurple;
+    font-size: 3rem;
+}
+.grid2{
+    background-color: white;
+    width: 30rem;
+}
+.grid2 h2{
+    font-size: 2rem;
+    color: maroon;
+}
+.grid2 img{
+    width: 25rem;
+    height: 19rem;
+}
+.grid2 p{
+    color: rebeccapurple;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+.grid3{
+    background-color: white;
+    width: 30rem;
+}
+.ima{
+    display: flex;
+    justify-content: center;
+}
+.grid3 h2{
+    font-size: 2rem;
+    color: maroon;
+    margin-top: 9.5rem;
+}
+.grid3 p{
+    color: rebeccapurple;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+:root {
+    --primary: #e63946;
+    --secondary: #f1faee;
+    --dark: #1d3557;
+    --light: #a8dadc;
+    --gold: #ffd166;
+    --font-title: 'Dancing Script', cursive;
+    --font-text: 'Montserrat', sans-serif;
+}
+
+/* Reset et Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-text);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Navigation Flottante */
+.floating-nav {
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    background: rgba(29, 53, 87, 0.8);
+    padding: 15px 25px;
+    border-radius: 50px;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.floating-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.floating-nav a:hover {
+    color: var(--gold);
+}
+
+.floating-nav a::after {
+    justify-content: space-between;
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gold);
+    transition: width 0.3s ease;
+}
+
+.floating-nav a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section avec Parallaxe */
+.parallax-hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), 
+                url('hero-bg.jpg') center/cover fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    animation: fadeIn 1.5s ease-out;
+}
+
+.animated-title {
+    font-family: var(--font-title);
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    color: var(--gold);
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+    animation: slideDown 1s ease-out;
+}
+
+.animated-subtitle {
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+    animation: slideUp 1s ease-out;
+}
+
+.scrolling-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+}
+
+.scrolling-indicator i {
+    font-size: 2rem;
+    color: white;
+}
+
+/* Menu avec Cartes 3D */
+.menu-section {
+    padding: 100px 20px;
+    background-color: var(--secondary);
+    color: var(--dark);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.section-title span {
+    color: var(--primary);
+    font-family: var(--font-title);
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: var(--primary);
+}
+.floating-nav{
+    margin-left: .5rem;
+}
+.floating-nav a{
+    margin-left: 6rem;
+}
+
+.menu-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    perspective: 1000px;
+}
+
+.menu-card {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+.menu-card:hover {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.card-front {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-front img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.card-front h3 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: var(--dark);
+}
+
+.card-back {
+    background: var(--dark);
+    transform: rotateY(180deg);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.card-back ul {
+    list-style: none;
+    width: 100%;
+}
+
+.card-back li {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+.card-back li:last-child {
+    border-bottom: none;
+}
+
+.card-back span {
+    color: var(--gold);
+    font-weight: bold;
+}
+
+/* Galerie Interactive */
+.gallery-section {
+    padding: 100px 20px;
+    background: var(--dark);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.gallery-item {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.gallery-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    transition: all 0.5s ease-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.gallery-item:hover::before {
+    background: rgba(0,0,0,0.1);
+}
+
+/* CTA avec Particules */
+.cta-section {
+    height: 400px;
+    background: linear-gradient(135deg, var(--primary), var(--dark));
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.particles::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="25" cy="25" r="1" fill="white"/><circle cx="75" cy="50" r="1.5" fill="white"/><circle cx="15" cy="70" r="1" fill="white"/><circle cx="90" cy="20" r="1" fill="white"/><circle cx="50" cy="90" r="1.5" fill="white"/></svg>');
+    background-size: 100px 100px;
+    opacity: 0.3;
+    animation: particlesMove 20s linear infinite;
+}
+
+.cta-content {
+    text-align: center;
+    z-index: 1;
+    animation: pulse 2s infinite alternate;
+}
+
+.cta-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.glow-button {
+    background: var(--gold);
+    color: var(--dark);
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 209, 102, 0.5);
+}
+.glow-button a{
+    text-decoration: none;
+}
+
+.glow-button:hover {
+    background: white;
+    box-shadow: 0 0 30px rgba(255, 209, 102, 0.8);
+    transform: translateY(-5px);
+}
+
+.glow-button i {
+    margin-left: 10px;
+}
+
+/* Footer avec Effet Vague */
+.wave-footer {
+    position: relative;
+    background: var(--dark);
+    padding-top: 100px;
+}
+
+.wave-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="%23e63946" opacity=".25"/><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" fill="%23e63946" opacity=".5"/><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="%23e63946"/></svg>');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.footer-info h3 {
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--gold);
+}
+
+.footer-info p, .footer-hours p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-info i, .footer-hours i {
+    margin-right: 10px;
+    color: var(--primary);
+}
+
+.footer-hours h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer-social h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    background: var(--primary);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: var(--gold);
+    color: var(--dark);
+    transform: translateY(-5px);
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { 
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from { 
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+    40% { transform: translateY(-20px) translateX(-50%); }
+    60% { transform: translateY(-10px) translateX(-50%); }
+}
+
+@keyframes particlesMove {
+    from { background-position: 0 0; }
+    to { background-position: 100px 100px; }
+}
+
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.05); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .animated-title {
+        font-size: 4rem;
+    }
+    
+    .menu-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu-card {
+        width: 280px;
+        height: 380px;
+    }
+    
+    .floating-nav {
+        padding: 10px 15px;
+        top: 10px;
+    }
+    
+    .floating-nav a {
+        margin: 0 8px;
+        font-size: 0.9rem;
+    }
+}
+.diplome_etude{
+    width: 79rem;
+    height: 25rem;
+    background-color: wheat;
+    border: 1px solid none;
+    display: grid;
+    grid-template-rows: repeat(1,0fr);
+    grid-template-columns: repeat(3, 400px);
+    column-gap: 2rem;
+    text-align: center;
+    margin-top: 2rem;   
+}
+.profil{
+    background-color: honeydew;
+}
+.profil h2{
+    color: blue;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+.profil p{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: aqua;
+}
+.diplome{
+    background-color: honeydew;
+}
+.diplome h2{
+    color: blue;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+.diplome p{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: aqua;
+}
+.etude{
+    background-color: honeydew;
+    height: 25rem;
+}
+.etude h2{
+    color: blue;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+.etude p{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: aqua;
+    width: 22rem;
+    margin-left: 1rem;
+}
+.Contats{
+    background-color: honeydew;
+}
+.text{
+    background-color: yellow;
+    text-align: center;
+}
